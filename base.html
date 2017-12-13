@@ -16,38 +16,69 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
 </head>
 <body>
-<div class="container">
-    <div class="row">
-        <div class="col-md-6 col-lg-6">
-            <div class="well spaced">
-                <h2>Student Information</h2>
-                <form name="studentInfo" novalidate>
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input id="name" class="form-control" placeholder="Name" type='text' name='name' pattern="[A-Za-z]" maxlength="40" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input id="email" class="form-control" placeholder="Email" type='email' name='email' maxlength="50" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="grade">Grade Level:</label>
-                        <select name='grade'>
-                            <option disabled selected value> -- select a grade level --</option>
-                            <option value='2'>2nd Grade</option>
-                            <option value='3'>3rd Grade</option>
-                            <option value='4'>4th Grade</option>
-                            <option value='5'>5th Grade</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <button type='submit' class="btn btn-primary">Submit</button>
-                    </div>
-                </form>
-            </div>
+<nav id="navbar-color" class="navbar-color navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <!--collapse button-->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+        <!--/.navbar-->
         </div>
+            
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <img class="navbar-brand" src="static/Logo.png"/>
+            <ul class="nav navbar-nav">
+              <li><a href="">About</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Resources</a></li>
+              <li><a href="">Partners</a></li>
+            </ul>
+        <!--/.navbar collapse-->
+        </div>    
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6">
+                        <!--Studen information form-->
+                        <div id="form" class="well spaced">
+                            <h2>Student Information</h2>
+                            <form name="studentInfo">
+                                <div class="form-group">
+                                    <label for="name">Name:</label>
+                                    <input id="name" class="form-control" placeholder="Name" type='text' name='name' pattern="[a-zA-Z\s]+" maxlength="40" title="Only enter letters and up to 40 characters" required/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input id="email" class="form-control" placeholder="Email" type='email' name='email' maxlength="50" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="grade">Grade Level:</label>
+                                    <select name='grade'>
+                                        <option disabled selected value> -- select a grade level --</option>
+                                        <option value='2'>2nd Grade</option>
+                                        <option value='3'>3rd Grade</option>
+                                        <option value='4'>4th Grade</option>
+                                        <option value='5'>5th Grade</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <button type='submit' class="btn btn-primary">Submit</button>
+                                </div>
+                            </form>
+                        <!--/.Student information form-->
+                        </div>
+                    <!--/.column-->
+                    </div>
+                <!--/.row-->
+                </div>
+            <!--/.container-->
+            </div>
+    <!--/.contain fluid-->
     </div>
-</div>
+</nav>
+
 
 </body>
 
