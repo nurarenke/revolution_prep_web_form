@@ -3,4 +3,41 @@ body {
     font-family:'Nunito Sans', sans-serif;
     font-size:20px;
 
-};
+}
+
+.outside-label {
+    height:50px
+    left padding:25px;
+    border:1px, #888888;
+    font-size:15px;
+    color:#888888;
+    font-weight:bolder;
+}
+
+.form-control:focus {
+  border-color:#FF8000;
+  box-shadow:none;
+}
+
+.form-control {
+    height:50px
+    left padding:25px;
+    border:1px, #888888;
+    font-size:15px;
+    color:#888888;
+}
+
+.btn {
+    background-color:#FF8000;
+    font-size:15px;
+    font-weight: bold;
+    color:#FFFFFF;
+    text-transform: uppercase;
+    border-radius: 0px;
+    height: 50px;
+    left padding: 25px;
+    right padding: 25px;
+    letter-spacing: 1px;
+
+}
+
